@@ -1,4 +1,4 @@
-﻿using System;
+ using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Collections.Generic;
@@ -35,12 +35,12 @@ OpenInfFile:
 			}
 			dataInfPath = openFileDialog.FileName;
 		}
-		Console.WriteLine("Selected .inf file: {0}", dataInfPath);
+		Console.WriteLine("Selected .inf file: {0}.", dataInfPath);
 
 		byte[] bytes = File.ReadAllBytes(dataInfPath);
 		if(bytes.Length < 24)
 		{
-			Console.WriteLine("The file you provided is either wrong or corrupt");
+			Console.WriteLine("The file you provided is either wrong or corrupt.");
 			goto OpenInfFile;
 		}
 
