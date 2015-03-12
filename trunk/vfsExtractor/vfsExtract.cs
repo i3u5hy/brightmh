@@ -32,7 +32,7 @@ OpenInfFile:
 			if(_openDataInf == DialogResult.Cancel)
 			{
 				Environment.Exit(0);
-            return;
+				return;
 			}
 			dataInfPath = openFileDialog.FileName;
 		}
@@ -97,7 +97,7 @@ OpenInfFile:
 			catch(ArgumentException)
 			{
 				Console.WriteLine("It seems, that you've choosed other version of Martial Heroes inf file, than the required one.");
-            Environment.Exit(0);
+				Environment.Exit(0);
 				return;
 			}
 
